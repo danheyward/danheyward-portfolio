@@ -3,7 +3,6 @@ Header fonts - Raleway
 Other text - Latro
 */
 
-
 body {
   margin: 0;
   padding: 0;
@@ -14,18 +13,38 @@ body {
 }
 
 h1 {
-  font-family: 'Raleway Dots' sans-serif !important;
+  font-family: 'Raleway' sans-serif !important;
 }
 
 nav {
   text-align: right;
   background-color: white !important;
   font-family: 'Raleway' sans-serif !important;
+  box-shadow: none !important;
   height: 50px;
 }
 
 section {
-  width: 100%;
+  width: 300px;
   height: 300px;
-  margin: 20px;
+  margin: 20px 20px;
+  display: inline-block !important;
+}
+
+.hero {
+  border-radius: 100%;
+  border-color: #B7B6C2;
+  border-style: dotted;
+  background: white;
+}
+
+.info {
+  background: #B7B6C2;
+}
+
+.divider {
+  height: 200px !important;
+  width: 100%;
+  background: #B7B6C2 !important;
+  margin-bottom: 10px;
 }
