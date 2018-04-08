@@ -4,6 +4,7 @@
     <meta charset='utf-8'>
     <title>daniel heyward</title>
     <link rel='stylesheet' type='text/css' href='style.css'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
   </head>
   <body>
@@ -12,85 +13,94 @@
 
     <div class='header'>
       <h1 id='title'>daniel h.</h1>
+      <ul class='nav'>
+        <a id='who-link' class='nav-links' href='#who'><li>who...</li></a>
+        <a id='what-link' class='nav-links' href='#what'><li>what...</li></a>
+        <a id='how-link' class='nav-links' href='#how'><li>how...</li></a>
+      </ul>
+      <div id='logo'><h1>d|h</h1></div>
     </div>
 
     <!-- End of test Nav -->
 
     <main>
 
+      <!-- Start of Hero -->
+    		<div class="hero">
+          <div class='container'>
+            <div class='circle'>
+              <p class='circle-text'><i class='fas fa-code'></i></p>
+            </div>
+            <p class='circle-description'>clean + concise code</p>
+          </div>
+
+          <div class='container'>
+            <div class='circle'>
+              <p class='circle-text'><i class="fas fa-chart-line"></i></p>
+            </div>
+            <p class='circle-description'>driven results</p>
+          </div>
+
+          <div class='container'>
+            <div class='circle'>
+              <p class='circle-text'><i class="fas fa-universal-access"></i></p>
+            </div>
+            <p class='circle-description'>accessible design</p>
+          </div>
+
+        </div>
+      <!-- End of Hero -->
+
       <!-- Start of Bio -->
-      <div class='container'>
-        <div id='bio'>
-          <p class='icon-text'>< /></p>
-        </div>
-
-        <div id='bio-text'>
-          <p class='description'>
-            I'm a full stack web developer
-          </p>
-          <p class='description'>
-            dedicated to bridging the gap between
-          </p>
-          <p class='description'>
-            optimistic opportunity and impactful reality.
-          </p>
-          <p class='description'>
-            I'm passionate about solving REAL problems,
-          </p>
-          <p class='description'>
-            doing so with clean, precise code
-          </p>
-          <p class='description'>
-            and accessible design.
-          </p>
-        </div>
+      <div class='bio header' id='who'>
+        <h1>...i am</h1>
       </div>
-
-      <div id="side">
-    		<div class="panel one"></div>
-      </div>
-
       <!-- End of Bio -->
 
       <!-- Start of Projects -->
-      <div class='container'>
-        <h1>THIS IS WHERE THE PROJECTS GO</h1>
+      <div class='projects' id='what'>
+        <div class='header'>
+          <h1>...i've done</h1>
+        </div>
       </div>
       <!-- End of Projects -->
 
-      <!-- Start of Talents -->
-      <div class='container'>
-        <h1>THIS IS WHERE THE SKILLS GO</h1>
+      <!-- Start of Skills -->
+      <div class='skills' id='how'>
+        <div class='header'>
+          <h1>...i make it happen</h1>
+        </div>
+
         <div class='carousel'>
-          <img class='logo' src="imgs/logos/bootstrap.svg" alt="Bootstrap">
-          <img class='logo' src="imgs/logos/chai.svg" alt="Chai">
-          <img class='logo' src="imgs/logos/css-3.svg" alt="CSS3">
-          <img class='logo' src="imgs/logos/django.svg" alt="Django">
-          <img class='logo' src="imgs/logos/github-icon.svg" alt="Github">
-          <img class='logo' src="imgs/logos/html-5.svg" alt="HTML5">
-          <img class='logo' src="imgs/logos/javascript.svg" alt="Javascript">
-          <img class='logo' src="imgs/logos/jquery.svg" alt="jQuery">
-          <img class='logo' src="imgs/logos/materializecss.svg" alt="Materialize">
-          <img class='logo' src="imgs/logos/mocha.svg" alt="Mocha">
-          <img class='logo' src="imgs/logos/mongodb.svg" alt="MongoDB">
-          <img class='logo' src="imgs/logos/nodejs-icon.svg" alt="NodeJS">
-          <img class='logo' src="imgs/logos/nodemon.svg" alt="Nodemon">
-          <img class='logo' src="imgs/logos/postgresql.svg" alt="PostgreSQL">
-          <img class='logo' src="imgs/logos/python.svg" alt="Python">
-          <img class='logo' src="imgs/logos/react-router.svg" alt="React Router">
-          <img class='logo' src="imgs/logos/react.svg" alt="React">
-          <img class='logo' src="imgs/logos/redux.svg" alt="Redux">
-          <img class='logo' src="imgs/logos/sequelize.svg" alt="Sequelize">
-          <img class='logo' src="imgs/logos/socket.io.svg" alt="Socket.io">
+          <img class='icon' src="imgs/logos/html-5.svg" alt="HTML5">
+          <img class='icon' src="imgs/logos/css-3.svg" alt="CSS3">
+          <img class='icon' src="imgs/logos/javascript.svg" alt="Javascript">
+          <img class='icon' src="imgs/logos/python.svg" alt="Python">
+          <img class='icon' src="imgs/logos/socket.io.svg" alt="Socket.io">
+        </div>
+
+        <div class='carousel'>
+          <img id='mongo' class='icon' src="imgs/logos/mongodb.svg" alt="MongoDB">
+          <img class='icon' src="imgs/logos/postgresql.svg" alt="PostgreSQL">
+          <img class='icon' src="imgs/logos/sequelize.svg" alt="Sequelize">
+          <img class='icon' src="imgs/logos/nodejs-icon.svg" alt="NodeJS">
+        </div>
+
+        <div class='carousel'>
+          <img class='icon' src="imgs/logos/django.svg" alt="Django">
+          <img class='icon' src="imgs/logos/mocha.svg" alt="Mocha">
+          <img class='icon' src="imgs/logos/chai.svg" alt="Chai">
+          <img id='jquery' class='icon' src="imgs/logos/jquery.svg" alt="jQuery">
+        </div>
+
+        <div class='carousel'>
+          <img class='icon' src="imgs/logos/react.svg" alt="React">
+          <img class='icon' src="imgs/logos/redux.svg" alt="Redux">
+          <img class='icon' src="imgs/logos/bootstrap.svg" alt="Bootstrap">
+          <img id='materialize' class='icon' src="imgs/logos/materializecss.svg" alt="Materialize">
         </div>
       </div>
       <!-- End of Talents -->
-
-      <!-- Start of Contact -->
-      <div class='container'>
-        <h1>THIS IS WHERE THE CONTACT GOES</h1>
-      </div>
-      <!-- End of Contact -->
 
     </main>
 
