@@ -112,7 +112,7 @@ Other text - Latro
   }
 
   .icon {
-    width: 30px;
+    width: 5vw;
     padding: 2vw;
     margin: 2vw;
   }
@@ -152,6 +152,9 @@ Other text - Latro
   @media (min-width: 500px) {
     .icon {
       transition: all .2s ease-in-out;
+      width: 5vw;
+      padding: 2vw;
+      margin: 2vw;
     }
     .icon:hover {
       transform: scale(2);
