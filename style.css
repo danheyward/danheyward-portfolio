@@ -123,13 +123,12 @@ Other text - Latro
   }
 
   #mongo, #jquery {
-      width: 100px;
+      width: 10vw;
     }
 
   #materialize {
-    width: 50px;
+    width: 7vw;
   }
-
 
 /* Media Queries for Max-Width 800px */
   @media (max-width: 800px) {
