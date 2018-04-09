@@ -97,6 +97,26 @@ Other text - Latro
 /* Bio section */
   .bio {
     width: 100%;
+    text-align: center;
+  }
+
+  #bio {
+    position: relative;
+    top: -6vw;
+  }
+
+  #bio > a {
+    color: black;
+    font-size: 30px;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .resume {
+    width: 25vw;
+    border: #e65100 dashed 3px;
+    cursor: pointer;
+    margin: 10px 50px;
   }
 
 /* Project section */
@@ -116,6 +136,24 @@ Other text - Latro
     height: 200px;
   }
 
+  .project-image {
+    width: 20vw;
+    z-index: -100;
+    position: absolute;
+  }
+
+  #slacktivism > .project-image {
+    left: 10vw;
+  }
+
+  #equally > .project-image {
+    left: 40vw;
+  }
+
+  #yahtzee > .project-image {
+    left: 69vw;
+  }
+
   .card {
     background-color: #e65100;
     border-radius: 20px;
@@ -123,26 +161,33 @@ Other text - Latro
     height: 300px;
     z-index: 0;
     padding: 10px 30px;
-    margin: 0px 30px;
+    margin: 0px 30px 20px 30px;
     transition: transform 0.4s, transform 0.4s ease;
   }
 
   .card:hover{
-    transform: translateY(150px);
+    transform: translateY(200px);
   }
 
-  .fa-chevron-circle-down {
+  .fa-chevron-circle-down, .fa-github, .fa-eye {
     font-size: 30px;
+    color: black;
+  }
+
+  .fa-github, .fa-eye {
+    margin: 0 20px;
   }
 
   .card h1, .fa-chevron-circle-down  {
     color: white;
+    font
   }
 
   .card p {
     font-size: 15px;
     padding: 5px 5px 30px 5px;
     color: white;
+    font-family: 'Latro', sans-serif;
   }
 
 /* Skills section */
@@ -170,10 +215,42 @@ Other text - Latro
     width: 7vw;
   }
 
+/* Media Queries for Min-width */
+  @media (min-width: 1650px) {
+    #slacktivism > .project-image {
+      left: 14vw;
+      }
+
+    #yahtzee > .project-image {
+      left: 65vw;
+    }
+
+    .card:hover{
+      transform: translateY(330px);
+    }
+  }
+
 /* Media Queries for Max-Width 920px */
   @media (max-width: 920px) {
     #yahtzee {
       display: none;
+    }
+
+    #slacktivism > .project-image {
+      left: 24vw;
+    }
+
+    #equally > .project-image {
+      left: 57vw;
+    }
+
+    #yahtzee > .project-image {
+      display: none;
+    }
+
+    .card h1, .fa-chevron-circle-down  {
+      color: white;
+      font-size: 3vw;
     }
   }
 
