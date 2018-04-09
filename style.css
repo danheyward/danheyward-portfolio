@@ -102,7 +102,47 @@ Other text - Latro
 /* Project section */
   .projects {
     width: 100%;
-    /* height: 400px; */
+    height: 500px;
+  }
+
+  #projects {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project {
+    display: inline-block;
+    text-align: center;
+    height: 200px;
+  }
+
+  .card {
+    background-color: #e65100;
+    border-radius: 20px;
+    width: 20vw;
+    height: 300px;
+    z-index: 0;
+    padding: 10px 30px;
+    margin: 0px 30px;
+    transition: transform 0.4s, transform 0.4s ease;
+  }
+
+  .card:hover{
+    transform: translateY(150px);
+  }
+
+  .fa-chevron-circle-down {
+    font-size: 30px;
+  }
+
+  .card h1, .fa-chevron-circle-down  {
+    color: white;
+  }
+
+  .card p {
+    font-size: 15px;
+    padding: 5px 5px 30px 5px;
+    color: white;
   }
 
 /* Skills section */
@@ -129,6 +169,14 @@ Other text - Latro
   #materialize {
     width: 7vw;
   }
+
+/* Media Queries for Max-Width 920px */
+  @media (max-width: 920px) {
+    #yahtzee {
+      display: none;
+    }
+  }
+
 
 /* Media Queries for Max-Width 800px */
   @media (max-width: 800px) {
@@ -161,16 +209,3 @@ Other text - Latro
       margin-left: 50px;
     }
   }
-
-/* #side {
-	z-index: 999;
-	position: absolute;
-	top: 55px;
-	left: -95%;
-	width: 100%;
-	transition: all 0.4s, all 0.4s ease;
-}
-
-#side:hover{
-	transform: translate(95%, 0);
-} */
