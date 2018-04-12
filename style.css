@@ -215,6 +215,18 @@ Other text - Latro
     width: 7vw;
   }
 
+  .link {
+    position: relative;
+    left: 54px;
+    top: -321px;
+    display: inline-block;
+  }
+
+  .link > div {
+    width: 5px;
+    height: 5px;
+  }
+
 /* Media Queries for Min-width */
   @media (min-width: 1650px) {
     #slacktivism > .project-image {
